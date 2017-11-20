@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+   <body>
+   <div class="container">
+      <form action = "{{ url_for('addlog') }}" method = "POST">
+         <h2>#LOG</h2>
+         <div class="form-group">
+            <label>Log_For:</label>
+            <input type="text" name="log_for" class="form-control"/></br>
+         <!--</div>-->
+          <!--<div class="form-group">-->
+            <label>Type:</label>
+            <input type="text" name="type" class="form-control"/></br>
+         <!--</div>-->
+          <!--<div class="form-group">-->
+            <label>Date:</label>
+            <input type="datetime-local" name="time" class="form-control"/></br>
+         <!--</div>-->
+          <!--<div class="form-group">-->
+            <label>Author:</label>
+            <input type="text" name="author" class="form-control"/></br>
+         <!--</div>-->
+         <button type = "submit" value = "submit" class="btn btn-default"/>Submit<br>
+         </div>
+      </form>
+       <a href="/dashboard">Cancel and go to Home</a>
+
+
+   </body>
+</html>
